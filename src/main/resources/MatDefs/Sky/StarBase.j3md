@@ -6,8 +6,8 @@ MaterialDef My MaterialDef {
     }
 
     Technique {
-        VertexShader GLSL100:   Shaders/Sky/Stars.vert
-        FragmentShader GLSL100: Shaders/Sky/Stars.frag
+        VertexShader GLSL120:   Shaders/Sky/Stars.vert
+        FragmentShader GLSL120: Shaders/Sky/Stars.frag
 
         WorldParameters {
             WorldViewProjectionMatrix
