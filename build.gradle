@@ -1,0 +1,23 @@
+group 'com.jayfella'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'com.jayfella.sky.Main'
+
+
+repositories {
+    // mavenCentral()
+    jcenter()
+}
+
+ext.jmeVersion = "[3.1,)"
+
+dependencies {
+    compile "org.jmonkeyengine:jme3-core:$jmeVersion"
+    compile "org.jmonkeyengine:jme3-lwjgl:$jmeVersion"
+    compile "org.jmonkeyengine:jme3-desktop:$jmeVersion"
+
+}

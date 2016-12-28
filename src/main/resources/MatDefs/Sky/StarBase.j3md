@@ -1,0 +1,22 @@
+MaterialDef My MaterialDef {
+
+    MaterialParameters {
+        Vector4 Color
+        Texture2D Texture;
+    }
+
+    Technique {
+        VertexShader GLSL100:   Shaders/Sky/Stars.vert
+        FragmentShader GLSL100: Shaders/Sky/Stars.frag
+
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+
+        RenderState {
+            DepthWrite Off
+            PointSprite On
+        }
+    }
+
+}
